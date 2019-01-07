@@ -109,25 +109,26 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Home" id="VVv-sN-UTO">
+                        <barButtonItem title="Item" image="ic_home" id="VVv-sN-UTO">
+                            <color key="tintColor" red="0.15663832426071167" green="0.46181362867355347" blue="0.74135929346084595" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="goHome:" destination="BYZ-38-t0r" id="MZc-UM-ow2"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="XNh-9Z-bo5"/>
-                        <barButtonItem title="Back" id="irc-M9-Zon">
+                        <barButtonItem image="ic_back" id="irc-M9-Zon">
                             <connections>
                                 <action selector="goBack:" destination="BYZ-38-t0r" id="6Nv-2c-Erd"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="G22-bP-4A0"/>
-                        <barButtonItem title="Foward" id="lrA-Zg-Aoj">
+                        <barButtonItem image="ic_foward" id="lrA-Zg-Aoj">
                             <connections>
                                 <action selector="goForward:" destination="BYZ-38-t0r" id="NEh-l6-UEd"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="MV5-Gx-AvB"/>
-                        <barButtonItem title="Reload" id="oB5-Ly-Pvh">
+                        <barButtonItem image="ic_reload" id="oB5-Ly-Pvh">
                             <connections>
                                 <action selector="reload:" destination="BYZ-38-t0r" id="hRk-ub-mwt"/>
                             </connections>
@@ -136,6 +137,8 @@
                     <navigationItem key="navigationItem" id="5Lg-eA-BNH"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="backBtn" destination="irc-M9-Zon" id="ym4-ha-RYG"/>
+                        <outlet property="forwardBtn" destination="lrA-Zg-Aoj" id="clQ-de-ZIi"/>
                         <outlet property="webView" destination="tKI-nE-pRC" id="zlk-sI-cz4"/>
                     </connections>
                 </viewController>
@@ -168,6 +171,10 @@
     <resources>
         <image name="Group" width="161" height="144"/>
         <image name="default" width="185" height="48"/>
+        <image name="ic_back" width="11" height="19"/>
+        <image name="ic_foward" width="11" height="19"/>
+        <image name="ic_home" width="21" height="19"/>
+        <image name="ic_reload" width="16" height="21"/>
         <image name="introImg" width="326" height="504"/>
     </resources>
     <inferredMetricsTieBreakers>

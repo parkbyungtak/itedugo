@@ -25,11 +25,17 @@ class HomeViewController: UIViewController {
     
     var isHome : Bool = true
     
+    
+    @IBOutlet weak var backBtn: UIBarButtonItem!
+    
+    @IBOutlet weak var forwardBtn: UIBarButtonItem!
+    
     @IBAction func goHome(_ sender: Any) {
         homepageLoad()
     }
     
     @IBAction func goBack(_ sender: Any) {
+        
         if webView.canGoBack {
             webView.goBack()
         }
@@ -119,15 +125,25 @@ extension HomeViewController: WKUIDelegate, WKNavigationDelegate, WKScriptMessag
   
         if webView.canGoBack == false {
             isHome = true
+            backBtn.isEnabled = false
             self.navigationController?.setToolbarHidden(true, animated: false)
         }
+        
+        
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
 
         if webView.canGoBack {
             isHome = false
+            backBtn.isEnabled = true
             self.navigationController?.setToolbarHidden(false, animated: false)
+        }
+        
+        if webView.canGoForward == true {
+            forwardBtn.isEnabled = true
+        } else {
+            forwardBtn.isEnabled = false
         }
         
         // 웹뷰 로딩 처리 후 이미지 처리(삭제)
