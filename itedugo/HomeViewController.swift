@@ -176,7 +176,7 @@ extension HomeViewController : UIScrollViewDelegate {
         
         if isHome == false {
             let hide = scrollView.contentOffset.y > self.lastOffsetY
-            self.navigationController?.setNavigationBarHidden(hide, animated: true)
+            //self.navigationController?.setNavigationBarHidden(hide, animated: true)
             self.navigationController?.setToolbarHidden(hide, animated: true)
         }
         

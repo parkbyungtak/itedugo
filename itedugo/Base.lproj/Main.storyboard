@@ -36,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edR-nl-ZTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1289" y="20"/>
+            <point key="canvasLocation" x="-1426" y="19"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="maY-3G-oDH">
@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fo6-SQ-HER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-592.79999999999995" y="16.641679160419791"/>
+            <point key="canvasLocation" x="-415" y="18"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -178,6 +178,6 @@
         <image name="introImg" width="326" height="504"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ROU-OZ-y1h"/>
+        <segue reference="6Ew-bR-uNe"/>
     </inferredMetricsTieBreakers>
 </document>
